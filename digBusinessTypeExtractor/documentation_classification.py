@@ -2,7 +2,7 @@
 # @Author: ZwEin
 # @Date:   2016-10-06 23:36:45
 # @Last Modified by:   ZwEin
-# @Last Modified time: 2016-10-19 17:54:04
+# @Last Modified time: 2016-11-02 11:29:40
 # -*- coding: utf-8 -*-
 # @Author: ZwEin
 # @Date:   2016-09-23 12:58:37
@@ -84,10 +84,10 @@ class WEDC(object):
             self.labels += new_labels
             self.size += len(new_labels)
 
-        self.vectorizer_type = 'tfidf'
-        self.classifier_type = 'knn'
-        self.classifier_algorithm='brute'
-        self.metrix='cosine'
+        self.vectorizer_type = vectorizer_type
+        self.classifier_type = classifier_type
+        self.classifier_algorithm = classifier_algorithm
+        self.metrix = metrix
 
         self.vectorizer = None
         self.classifier = None
